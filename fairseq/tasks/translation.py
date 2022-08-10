@@ -493,5 +493,9 @@ class TranslationTask(FairseqTask):
             logger.info("example reference: " + refs[0])
         if self.cfg.eval_tokenized_bleu:
             return sacrebleu.corpus_bleu(hyps, [refs], tokenize="none")
+        elif self.cfg.eval_bleu_detok_args:
+            import json
+            tokenize = json.loads(self.cfg.eval_bleu_detok_args).get("tokenize","13a") 
+            return sacrebleu.corpus_bleu(hyps, [refs], tokenize=tokenize)
         else:
             return sacrebleu.corpus_bleu(hyps, [refs])
