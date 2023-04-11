@@ -55,6 +55,7 @@ class EncDecBaseConfig(FairseqDataclass):
             "help": "config for xFormers attention, defined in xformers.components.attention.AttentionConfig"
         },
     )
+    
 
 
 @dataclass
@@ -235,6 +236,12 @@ class TransformerConfig(FairseqDataclass):
     no_decoder_final_norm: bool = field(
         default=False,
         metadata={"help": "don't add an extra layernorm after the last decoder block"},
+    )
+    
+    #jc
+    layer_pkd: bool = field(
+        default=False, 
+        metadata={"help": "apply pkd in the model"}
     )
 
     # We need to make this hierarchical dataclass like the flat namespace
