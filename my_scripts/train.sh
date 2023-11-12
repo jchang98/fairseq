@@ -1,5 +1,5 @@
-base_dir=/SISDC_GPFS/Home_SE/xyduan-suda/cjin/fairseq
-save=/SISDC_GPFS/Home_SE/xyduan-suda/cjin/fairseq_save
+base_dir=xxx/fairseq
+save=xxx/fairseq_save
 task_name=ldc-zhen-talkingheads
 save_dir=$save/$task_name/checkpoints/
 log_file=$save/$task_name/checkpoints/train.log
