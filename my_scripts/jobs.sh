@@ -1,5 +1,5 @@
-base_dir=/SISDC_GPFS/Home_SE/xyduan-suda/cjin/fairseq
-save=/SISDC_GPFS/Home_SE/xyduan-suda/cjin/fairseq_save
+base_dir=xxx/fairseq
+save=xxx/fairseq_save
 task_name=ldc-zhen-talkingheads
 bsub -gpu num=1:mode=exclusive_process \
 	-q HPC.S1.GPU.X785.suda \
