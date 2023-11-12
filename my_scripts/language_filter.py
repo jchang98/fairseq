@@ -2,7 +2,7 @@ import fasttext
 import argparse
 
 
-bin_path = '/home/notebook/data/personal/S9048436/fasttext/lid.176.bin'
+bin_path = 'xxx/fasttext/lid.176.bin'
 
 try:
     model = fasttext.load_model(bin_path)
