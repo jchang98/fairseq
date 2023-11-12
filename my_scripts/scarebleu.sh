@@ -2,7 +2,7 @@
 ### fairseq 验证集中报的分数是sacrebleu的分数，采用的是13a进行分词。
 ### 需要传递一个参数eval_bleu_detok_args,然后更改fairseq/tasks/translation.py中的inference_with_bleu函数去传递tokenizer。
 
-base_dir=/home/notebook/code/personal/S9048436/fairseq/project/wmt22
+base_dir=xxx/fairseq/project/wmt22
 task_name=wmt-enzh-big-baseline
 avg_epoch=0
 
