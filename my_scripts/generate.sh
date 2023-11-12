@@ -1,5 +1,5 @@
-base_dir=/SISDC_GPFS/Home_SE/xyduan-suda/cjin/fairseq
-save=/SISDC_GPFS/Home_SE/xyduan-suda/cjin/fairseq_save/layerkd
+base_dir=xxx/fairseq
+save=xxx/fairseq_save/layerkd
 task_name=iwslt-deen-pkd
 avg_epoch=0
 
